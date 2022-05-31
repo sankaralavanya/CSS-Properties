@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Borders</title>
+		<style>
+			h1{
+				text-align:center;
+				color:red;
+				border:5px dashed yellow;
+			}
+			main{
+				display:flex;
+				height:300px;
+				border:5px double purple;
+			}
+			main #flwr,main #list,main #pic{
+				flex:1;
+			}
+			.img1{
+				border:10px dotted red;
+			}
+			.img2{
+				border:10px inset green;
+			}
+			ul{
+				font-size:20px;
+				border-top:10px groove yellow;
+				border-bottom:20px double orange;
+				border-left:15px dashed green;
+				border-right:15px ridge red;
+				margin-right:50px;
+				background-color:lightgrey;
+			}
+			ul li:first-child{
+				border-style:double;
+			}
+			ul li:nth-child(2){
+				border-style:solid;
+				border-width:5px;
+			}
+			ul li:last-child{
+				border-style:solid;
+				border-color:purple;
+				border-width:10px;
+			}
+			p{
+				color:red;
+				font-size:20px;
+				border-style:outset;
+				border-width:thin medium thick;
+			}
+			h2{
+				border:5px solid gold;
+				border-radius:10px;
+				margin-right:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<header>
+				<h1>CSS Borders</h1>
+			</header>
+			<main>
+				<div id="flwr">
+					<img class="img1" src="../images/flower.jfif" alt="No IMage"/>
+				</div>
+				<div id="list">
+					<h2>Borser Radius</h2>
+					<ul>
+						<li>Border Style</li>
+						<li>Border width</li>
+						<li>Border color</li>
+					</ul>
+				</div>
+				<div id="pic">
+					<img class="img2" src="../images/pic.jfif" alt="No IMage"/>
+				</div>
+			</main>
+			<footer>
+				<p>border-width: Thin Medium Thick ---- color appiled to border color</p>
+			</footer>
+		</section>
+	</html>
+				
